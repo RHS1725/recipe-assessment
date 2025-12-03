@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "49919794-bf848f85-cc0c-49f7-902d-b2aed38af7cf",
+		"name": "Recipe_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search-calorie",
+			"id": "49919794-24c5e6d0-22a9-4959-a6aa-a6add0b720f1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?calorie=<300\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "calorie",
+							"value": "<300\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-total_time",
+			"id": "49919794-a920d871-0ab1-4f90-aac6-3029a0428e65",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?total_time=>1900\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "total_time",
+							"value": ">1900\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-any parameter",
+			"id": "49919794-f8ceed82-07ee-4516-8d49-d59a490ddfb4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all recipes",
+			"id": "49919794-6e8c9a47-e8a4-43c0-920b-cbd063ac7b19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by rating",
+			"id": "49919794-64592343-8e63-457b-b292-90743f56861e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?rating==3\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "rating",
+							"value": "=3\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by cuisine",
+			"id": "49919794-b72ad730-0528-4d0a-bcc3-0662e1ea6db1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?cuisine=Southern",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "cuisine",
+							"value": "Southern"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by title",
+			"id": "49919794-956234e5-a4c2-4a28-b8bc-11cbb947adef",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?title=honey",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "honey"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by all",
+			"id": "49919794-d0f694e8-2db5-464e-aa60-4291306c97a9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/recipes/search?title=honey&cuisine=Southern&rating=>3&total_time=<80&calorie=>80",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "honey"
+						},
+						{
+							"key": "cuisine",
+							"value": "Southern"
+						},
+						{
+							"key": "rating",
+							"value": ">3"
+						},
+						{
+							"key": "total_time",
+							"value": "<80"
+						},
+						{
+							"key": "calorie",
+							"value": ">80"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
