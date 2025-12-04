@@ -191,7 +191,8 @@
 							"value": "Southern"
 						}
 					]
-				}
+				},
+				"description": "Search recipes by rating.\n\nEndpoint\nGET http://127.0.0.1:8000/recipes/search\n\nQuery parameters\n- rating: Filter by numeric rating. Supported operators: >, <, =.\n  - Examples: rating=>3, rating==3\n- title: Optional title keyword filter (e.g., title=honey).\n- cuisine: Optional cuisine/category filter (e.g., cuisine=Southern).\n- total_time: Optional total time filter with operators >, < (e.g., total_time<80, total_time>1900).\n- calorie: Optional calories filter with operators >, <, = (e.g., calorie<300, calorie=80).\n\nUsage examples\n- Exactly 3-star recipes: /recipes/search?rating==3\n- Above 3-star recipes: /recipes/search?rating=>3\n- Combine filters: /recipes/search?rating=>3&cuisine=Southern&title=honey\n\nResponse\nA paginated list of recipes. Example shape:\n{\n  \"page\": 1,\n  \"limit\": 10,\n  \"total_results\": 50,\n  \"total_pages\": 5,\n  \"results\": [\n    {\n      \"id\": 233,\n      \"title\": \"Peach Crumble Cake\",\n      \"cuisine\": \"Peach Crisps and Crumbles\",\n      \"rating\": 3,\n      \"prep_time\": 10,\n      \"cook_time\": 30,\n      \"total_time\": 40,\n      \"serves\": \"6 servings\",\n      \"nutrients\": \"{\\\"calories\\\": \\\"852 kcal\\\", ...}\"\n    }\n  ]\n}\n\nRelated requests (same collection)\n- search by rating (request/49919794-b72ad730-0528-4d0a-bcc3-0662e1ea6db1)\n- search by cuisine (request/49919794-64592343-8e63-457b-b292-90743f56861e)\n- search by title (request/49919794-956234e5-a4c2-4a28-b8bc-11cbb947adef)\n- search-total_time (request/49919794-a920d871-0ab1-4f90-aac6-3029a0428e65)\n- search-calorie (request/49919794-24c5e6d0-22a9-4959-a6aa-a6add0b720f1)\n\nNotes\n- Variables are supported; use {{variableName}} in URLs or params if needed.\n- Authentication: Not required for this local endpoint unless configured otherwise."
 			},
 			"response": []
 		},
