@@ -163,7 +163,7 @@
 			"response": []
 		},
 		{
-			"name": "search by cuisine",
+			"name": "search by rating",
 			"id": "49919794-b72ad730-0528-4d0a-bcc3-0662e1ea6db1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
