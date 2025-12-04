@@ -129,7 +129,7 @@
 			"response": []
 		},
 		{
-			"name": "search by rating",
+			"name": "search by cuisine",
 			"id": "49919794-64592343-8e63-457b-b292-90743f56861e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
